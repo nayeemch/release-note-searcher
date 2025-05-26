@@ -14,7 +14,6 @@ $(document).ready(function () {
         <td data-label="Product">${item.product}</td>
         <td data-label="Version">${item.version}</td>
         <td data-label="Date">${item.date}</td>
-        <td data-label="Title">${item.title}</td>
         <td data-label="Changelog">${contentHtml}</td>
       </tr>
     `);
@@ -25,7 +24,7 @@ $(document).ready(function () {
     pageLength: 10,
     order: [[2, 'desc']], // Sort by Date descending
     columnDefs: [
-      { targets: 4, orderable: false } // Disable sorting on Changelog column
+      { targets: 3, orderable: false } // Disable sorting on Changelog column
     ]
   });
 

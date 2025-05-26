@@ -77,8 +77,4 @@ README.md                 # This file
 
 ## License
 
-MIT
-
----
-
-*This project is not affiliated with BuddyBoss. It is for educational and informational purposes only.*
+MADE with FUN by nYm

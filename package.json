@@ -1,0 +1,11 @@
+{
+  "name": "releasenotescrapper",
+  "version": "1.0.0",
+  "description": "A project to scrap release notes from a site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

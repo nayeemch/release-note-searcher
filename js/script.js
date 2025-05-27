@@ -1,63 +1,62 @@
 $(document).ready(function () {
-  // Load JSON data
-  const rawData = document.getElementById('releaseData').textContent;
-  const data = JSON.parse(rawData);
-  const tableBody = $('#releaseTable tbody');
+  // Show spinner while fetching data
+  $('.spinner').show();
 
-  // Populate table
-  data.forEach(item => {
-    const contentList = item.changelogcontent.map(log => `<li>${log}</li>`).join('');
-    const contentHtml = `<ul>${contentList}</ul>`;
-    
-    tableBody.append(`
-      <tr>
-        <td data-label="Product">${item.product}</td>
-        <td data-label="Version">${item.version}</td>
-        <td data-label="Date">${item.date}</td>
-        <td data-label="Changelog">${contentHtml}</td>
-      </tr>
-    `);
-  });
+  // Fetch JSON data from external URL
+  $.ajax({
+    url: 'https://raw.githubusercontent.com/nayeemch/release-note-searcher/refs/heads/main/all-releases.json',
+    method: 'GET',
+    dataType: 'json',
+    success: function (data) {
+      // Hide spinner and show table
+      $('.spinner').hide();
+      $('#releaseTable').show();
 
-  // Initialize DataTable
-  const table = $('#releaseTable').DataTable({
-    pageLength: 10,
-    order: [[2, 'desc']], // Sort by Date descending
-    columnDefs: [
-      { targets: 3, orderable: false } // Disable sorting on Changelog column
-    ]
-  });
+      // Populate table
+      const tableBody = $('#releaseTable tbody');
+      data.forEach(item => {
+        const contentList = item.changelogcontent.map(log => `<li>${log}</li>`).join('');
+        const contentHtml = `<ul>${contentList}</ul>`;
+        
+        tableBody.append(`
+          <tr>
+            <td data-label="Product">${item.product}</td>
+            <td data-label="Version">${item.version}</td>
+            <td data-label="Date">${item.date}</td>
+            <td data-label="Changelog">${contentHtml}</td>
+          </tr>
+        `);
+      });
 
-  // Highlight search matches on draw
-  table.on('draw', function () {
-    const searchTerm = $('.dataTables_filter input').val().trim();
-    const $tableBody = $('#releaseTable tbody');
+      // Initialize DataTable
+      const table = $('#releaseTable').DataTable({
+        pageLength: 10,
+        order: [[2, 'desc']], // Sort by Date descending
+        columnDefs: [
+          { targets: 3, orderable: false } // Disable sorting on Changelog column
+        ]
+      });
 
-    // Remove old highlights
-    $tableBody.find('td').removeHighlight();
+      // Highlight search matches
+      table.on('draw', function () {
+        const searchTerm = $('.dataTables_filter input').val().trim();
+        const $tableBody = $('#releaseTable tbody');
 
-    // Apply new highlights if search term exists
-    if (searchTerm !== '') {
-      $tableBody.find('td').highlight(searchTerm);
+        $tableBody.find('td').removeHighlight();
+        if (searchTerm) {
+          $tableBody.find('td').highlight(searchTerm);
+        }
+      });
+    },
+    error: function (xhr, status, error) {
+      // Hide spinner and show error message
+      $('.spinner').hide();
+      $('.container').append('<div class="error-message" style="color: red; text-align: center; padding: 1rem;">Failed to load release data. Please try again later.</div>');
+      console.error('Error fetching JSON:', status, error);
     }
   });
 
-  // Toggle content visibility
-  $(document).on('click', '.toggle-content', function () {
-    const $this = $(this);
-    const $ul = $this.closest('ul');
-    const isExpanded = $this.data('expanded');
-
-    if (isExpanded) {
-      $ul.removeClass('expanded');
-      $this.text('Show More').data('expanded', false);
-    } else {
-      $ul.addClass('expanded');
-      $this.text('Show Less').data('expanded', true);
-    }
-  });
-
-  // jQuery highlight plugin
+  // Highlight plugin
   jQuery.fn.highlight = function (term) {
     if (!term) return this;
     const regex = new RegExp(`(${term.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')})`, 'gi');

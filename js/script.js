@@ -1,4 +1,23 @@
 $(document).ready(function () {
+  // Theme Toggle
+  const $html = $('html');
+  const $themeToggle = $('#themeToggle');
+  const $toggleIcon = $themeToggle.find('i');
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  $html.attr('data-theme', savedTheme);
+  $toggleIcon.toggleClass('fa-solid fa-cloud-moon', savedTheme === 'light').toggleClass('fa-solid fa-mountain-sun', savedTheme === 'dark');
+
+  // Toggle theme on click
+  $themeToggle.on('click', function() {
+    const currentTheme = $html.attr('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    $html.attr('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    $toggleIcon.toggleClass('fa-solid fa-cloud-moon', newTheme === 'light').toggleClass('fa-solid fa-mountain-sun', newTheme === 'dark');
+  });
+
   // Show spinner while fetching data
   $('.spinner').show();
 
@@ -31,9 +50,9 @@ $(document).ready(function () {
       // Initialize DataTable
       const table = $('#releaseTable').DataTable({
         pageLength: 10,
-        order: [[2, 'desc']], // Sort by Date descending
+        order: [[2, 'desc']],
         columnDefs: [
-          { targets: 3, orderable: false } // Disable sorting on Changelog column
+          { targets: 3, orderable: false }
         ]
       });
 

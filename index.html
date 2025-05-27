@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +13,13 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <div class="container">
+    <div class="header">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+        <i class="fas fa-solid fa-cloud-moon"></i>
+      </button>
+    </div>
     <h1>
       <div class="bb-site-logo">
         <a href="https://www.buddyboss.com/resources/release-notes/" class="bb-main-logo">
@@ -25,8 +28,7 @@
       </div>
       BuddyBoss Release Logs Searcher
     </h1>
-    <p class="source-credit">Data scraped from the <a href="https://www.buddyboss.com/resources/release-notes/"
-        class="source-link">BuddyBoss Release Notes</a> site.</p>
+    <p class="source-credit">Data scraped from the <a href="https://www.buddyboss.com/resources/release-notes/" class="source-link">BuddyBoss Release Notes</a> site.</p>
     <div class="spinner" style="display: none; text-align: center; padding: 2rem;">
       <i class="fas fa-spinner fa-spin fa-2x"></i>
     </div>
@@ -50,5 +52,4 @@
   <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>

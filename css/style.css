@@ -9,28 +9,39 @@
   --primary: #e86d2a;
   --bg-color: #f5f5f5;
   --container-bg: #fff;
-  --text-color: #222;
+  --text-color: #333;
+  --text-secondary: #4b5563;
   --table-bg: #f9fafb;
   --table-hover: #fff5eb;
-  --text-secondary: #555;
+  --border-color: #e5e7eb;
+  --input-bg: #fff;
+  --input-border: #d1d5db;
 }
 
 [data-theme="dark"] {
   --primary: #f28c38;
-  --bg-color: #222;
-  --container-bg: #333;
+  --bg-color: #1f2937;
+  --container-bg: #374151;
   --text-color: #e5e7eb;
-  --table-bg: #555;
+  --text-secondary: #9ca3af;
+  --table-bg: #4b5563;
   --table-hover: #6b7280;
-  --text-secondary-dark: #999;
+  --border-color: #4b5563;
+  --input-bg: #4b5563;
+  --input-border: #6b7280;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--bg-color, #f5f5f5) 0%, #e8ecef 100%);
-  color: var(--text-color);
+  background: linear-gradient(135deg, var(--bg-color) 0%, #e8ecef 100%);
   min-height: 100vh;
   padding: 2rem;
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background: linear-gradient(135deg, var(--bg-color) 0%, #2d3748 100%);
 }
 
 /* Container */
@@ -42,30 +53,66 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease-in;
+  transition: background 0.3s ease;
 }
 
 /* Header */
-h1 {
-  color: var(--text-color);
+.header {
+  position: relative;
   margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
+}
+
+h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #c6531e;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: #d17a3f;
+}
+
+.theme-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(232, 109, 42, 0.2);
+}
+
+[data-theme="dark"] .theme-toggle:focus {
+  box-shadow: 0 0 0 3px rgba(242, 140, 56, 0.2);
 }
 
 /* Source Credit */
 .source-credit {
   text-align: center;
   font-size: 0.95rem;
-  color: var(--text-secondary, #333);
+  color: var(--text-secondary);
   margin-bottom: 2rem;
-}
-
-[data-theme="dark"] .source-credit {
-  color: var(--text-dark);
+  transition: color 0.3s ease;
 }
 
 .source-link {
@@ -80,7 +127,7 @@ h1 {
 }
 
 [data-theme="dark"] .source-link:hover {
-  color: #d7a;
+  color: #d17a3f;
 }
 
 .bb-site-logo {
@@ -103,6 +150,7 @@ h1 {
 /* Spinner */
 .spinner i {
   color: var(--primary);
+  transition: color 0.3s ease;
 }
 
 /* DataTables Styling */
@@ -115,6 +163,7 @@ h1 {
 #releaseTable thead {
   background: var(--primary);
   color: #fff;
+  transition: background 0.3s ease;
 }
 
 #releaseTable th {
@@ -127,7 +176,7 @@ h1 {
 
 #releaseTable tbody tr {
   background: var(--table-bg);
-  transition: background 0.3s ease, transform: 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #releaseTable tbody tr:nth-child(even) {
@@ -142,11 +191,8 @@ h1 {
 #releaseTable td {
   padding: 1rem;
   font-size: 0.95rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-[data-theme="dark"] #releaseTable td {
-  border-bottom-color: #444;
+  border-bottom: 1px solid var(--border-color);
+  transition: border-color 0.3s ease;
 }
 
 #releaseTable td ul {
@@ -168,6 +214,7 @@ h1 {
   position: absolute;
   left: 0;
   top: 0.2rem;
+  transition: color 0.3s ease;
 }
 
 /* DataTables Search and Pagination */
@@ -176,24 +223,24 @@ h1 {
 }
 
 .dataTables_wrapper .dataTables_filter input {
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--input-border);
+  background: var(--input-bg);
   border-radius: 8px;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   width: 300px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-[data-theme="dark"] .dataTables_wrapper .dataTables_filter input {
-  border-color: #555;
-  background: #444;
   color: var(--text-color);
+  transition: border-color 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .dataTables_wrapper .dataTables_filter input:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(232, 109, 42, 0.2);
   outline: none;
+}
+
+[data-theme="dark"] .dataTables_wrapper .dataTables_filter input:focus {
+  box-shadow: 0 0 0 3px rgba(242, 140, 56, 0.2);
 }
 
 .dataTables_wrapper .dataTables_paginate {
@@ -214,29 +261,26 @@ h1 {
 }
 
 [data-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-  background: #d7a;
+  background: #d17a3f;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  border: 1px solid transparent !important;
   background: #a63c14;
+  border: 1px solid transparent !important;
   color: #fff !important;
 }
 
 [data-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.current,
 [data-theme="dark"] .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  background: #b75;
+  background: #b94f1a;
 }
 
 .dataTables_wrapper .dataTables_info {
   font-size: 0.9rem;
   color: var(--text-secondary);
   margin-top: 1rem;
-}
-
-[data-theme="dark"] .dataTables_wrapper .dataTables_info {
-  color: var(--text-secondary-dark);
+  transition: color 0.3s ease;
 }
 
 /* Highlight Styling */
@@ -244,6 +288,10 @@ mark {
   background: #fef08a;
   padding: 0.1rem 0.2rem;
   border-radius: 3px;
+}
+
+[data-theme="dark"] mark {
+  background: #ca8a04;
 }
 
 /* Animations */
@@ -272,6 +320,11 @@ mark {
     font-size: 0.9rem;
   }
 
+  .theme-toggle {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
   #releaseTable th,
   #releaseTable td {
     font-size: 0.85rem;
@@ -291,13 +344,10 @@ mark {
   #releaseTable tbody tr {
     display: block;
     margin-bottom: 1rem;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
-  }
-
-  [data-theme="dark"] #releaseTable tbody tr {
-    border-color: #555;
+    transition: border-color 0.3s ease;
   }
 
   #releaseTable td {
@@ -313,5 +363,6 @@ mark {
     color: var(--primary);
     display: block;
     margin-bottom: 0.2rem;
+    transition: color 0.3s ease;
   }
 }

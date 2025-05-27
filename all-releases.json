@@ -642,5 +642,63 @@
       "Bug: MemberPress - Fixed an issue where MemberPress courses were not loading on the app when the IAP Component was disabled",
       "Bug: Messages - Fixed an issue with deep linking where the \"Send Message\" button incorrectly opened the inbox instead of the specific member's conversation"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.8.70",
+    "date": "May 27, 2025",
+    "title": "BuddyBoss Platform - Version 2.8.70",
+    "changelogcontent": [
+      "Bug: Activity - Fixed issue where changing the activity post’s privacy incorrectly updated the posting date. The original date now remains unchanged",
+      "Bug: Activity - Fixed issue where emoji functionality wasn’t working in all areas due to JS files",
+      "Bug: Activity - Fixed issue where Follow/Unfollow functionality did not work when accessing user profiles from the Activity Feed",
+      "Bug: Groups - Fixed @mention issue in Hidden and Private groups, only group members can now be tagged",
+      "Bug: Groups - Fixed issue with the \"Select Multiple Videos\" feature, enabling associated actions like delete on the user's profile page and group page",
+      "Bug: Media - Fixed issue where video count showed as undefined when videos page, group videos, or user videos page were opened directly via URL"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.7.30",
+    "date": "May 27, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.7.30",
+    "changelogcontent": [
+      "Bug: Activity - Fixed issue where the News Feed filter changed unexpectedly when opening the \"View Scheduled Posts\" popup",
+      "Bug: Zoom - Fixed issue about the Zoom notifications weren’t clickable",
+      "Bug: Zoom - Fixed issue where Zoom meeting notifications does not show correct date and time"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.8.60",
+    "date": "May 27, 2025",
+    "title": "BuddyBoss Theme - Version 2.8.60",
+    "changelogcontent": [
+      "Bug: LifterLMS - Fixed issue with LifterLMS \"Write a Review\" feature preventing reviews from being saved"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.30",
+    "date": "May 27, 2025",
+    "title": "BuddyBoss App - Version 2.5.30",
+    "changelogcontent": [
+      "Bug: Social Login – Fixed UI issue on Login and Registration screens when all Social Login options are enabled on smaller screens",
+      "Bug: Learndash – Fixed issue where course arrows didn’t turn downward when toggled open",
+      "Bug: Notifications – Fixed an issue with the notification filter animation on Android",
+      "Bug: Media – Fixed fullscreen stretch issue for self-hosted videos in Video Block on Android",
+      "Bug: Media – Fixed issue where “Open in app” from YouTube web fallback didn’t launch the video in the YouTube app",
+      "Bug: Activity – Fixed issue where Follow/Unfollow functionality did not work when accessing user profiles from the Activity Feed"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.3.90",
+    "date": "May 27, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.3.90",
+    "changelogcontent": [
+      "Bug: Activity - Fixed issue where Follow/Unfollow functionality did not work when accessing user profiles from the Activity Feed",
+      "Enhancement: Core - Removed unused migration folder from the BuddyBoss App plugin"
+    ]
   }
 ]

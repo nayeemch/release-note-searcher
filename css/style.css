@@ -16,6 +16,15 @@
   --border-color: #e5e7eb;
   --input-bg: #fff;
   --input-border: #d1d5db;
+  /* Letter-based marker colors */
+  --marker-red: #ef4444;
+  --marker-blue: #3b82f6;
+  --marker-green: #22c55e;
+  --marker-purple: #a855f7;
+  --marker-teal: #14b8a6;
+  --marker-pink: #ec4899;
+  --marker-orange: #f97316;
+  --marker-indigo: #6366f1;
 }
 
 [data-theme="dark"] {
@@ -29,6 +38,15 @@
   --border-color: #4b5563;
   --input-bg: #4b5563;
   --input-border: #6b7280;
+  /* Letter-based marker colors for dark mode */
+  --marker-red: #f87171;
+  --marker-blue: #60a5fa;
+  --marker-green: #4ade80;
+  --marker-purple: #c084fc;
+  --marker-teal: #2dd4bf;
+  --marker-pink: #f472b6;
+  --marker-orange: #fb923c;
+  --marker-indigo: #818cf8;
 }
 
 body {
@@ -169,10 +187,8 @@ h1 {
 
 #releaseTable th {
   padding: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  font-weight: normal;
 }
 
 #releaseTable tbody tr {
@@ -204,18 +220,80 @@ h1 {
 #releaseTable td ul li {
   margin-bottom: 0.5rem;
   position: relative;
-  padding-left: 1.2rem;
+  padding-left: 1.8rem;
 }
 
 #releaseTable td ul li::before {
-  content: '\f058';
-  font-family: 'Font Awesome 6 Free';
-  font-weight: bold;
-  color: var(--primary);
+  content: attr(data-first-letter);
   position: absolute;
   left: 0;
   top: 0.2rem;
-  transition: color 0.3s ease;
+  width: 1.0rem;
+  height: 1.0rem;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Letter-based marker colors */
+#releaseTable td ul li[data-first-letter="A"]::before,
+#releaseTable td ul li[data-first-letter="I"]::before,
+#releaseTable td ul li[data-first-letter="Q"]::before {
+  background: var(--marker-red);
+}
+
+#releaseTable td ul li[data-first-letter="B"]::before,
+#releaseTable td ul li[data-first-letter="J"]::before,
+#releaseTable td ul li[data-first-letter="R"]::before {
+  background: var(--marker-blue);
+}
+
+#releaseTable td ul li[data-first-letter="C"]::before,
+#releaseTable td ul li[data-first-letter="K"]::before,
+#releaseTable td ul li[data-first-letter="S"]::before {
+  background: var(--marker-green);
+}
+
+#releaseTable td ul li[data-first-letter="D"]::before,
+#releaseTable td ul li[data-first-letter="L"]::before,
+#releaseTable td ul li[data-first-letter="T"]::before {
+  background: var(--marker-purple);
+}
+
+#releaseTable td ul li[data-first-letter="E"]::before,
+#releaseTable td ul li[data-first-letter="M"]::before,
+#releaseTable td ul li[data-first-letter="U"]::before {
+  background: var(--marker-teal);
+}
+
+#releaseTable td ul li[data-first-letter="F"]::before,
+#releaseTable td ul li[data-first-letter="N"]::before,
+#releaseTable td ul li[data-first-letter="V"]::before {
+  background: var(--marker-pink);
+}
+
+#releaseTable td ul li[data-first-letter="G"]::before,
+#releaseTable td ul li[data-first-letter="O"]::before,
+#releaseTable td ul li[data-first-letter="W"]::before {
+  background: var(--marker-orange);
+}
+
+#releaseTable td ul li[data-first-letter="H"]::before,
+#releaseTable td ul li[data-first-letter="P"]::before,
+#releaseTable td ul li[data-first-letter="X"]::before,
+#releaseTable td ul li[data-first-letter="Y"]::before,
+#releaseTable td ul li[data-first-letter="Z"]::before {
+  background: var(--marker-indigo);
+}
+
+/* Fallback for non-alphabetic letters */
+#releaseTable td ul li:not([data-first-letter="A"]):not([data-first-letter="B"]):not([data-first-letter="C"]):not([data-first-letter="D"]):not([data-first-letter="E"]):not([data-first-letter="F"]):not([data-first-letter="G"]):not([data-first-letter="H"]):not([data-first-letter="I"]):not([data-first-letter="J"]):not([data-first-letter="K"]):not([data-first-letter="L"]):not([data-first-letter="M"]):not([data-first-letter="N"]):not([data-first-letter="O"]):not([data-first-letter="P"]):not([data-first-letter="Q"]):not([data-first-letter="R"]):not([data-first-letter="S"]):not([data-first-letter="T"]):not([data-first-letter="U"]):not([data-first-letter="V"]):not([data-first-letter="W"]):not([data-first-letter="X"]):not([data-first-letter="Y"]):not([data-first-letter="Z"])::before {
+  background: var(--primary);
 }
 
 /* DataTables Search and Pagination */
@@ -368,6 +446,7 @@ mark {
     transition: color 0.3s ease;
   }
 }
+
 th.sorting_disabled {
-    text-align: center !important;
+  text-align: center !important;
 }

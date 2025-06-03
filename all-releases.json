@@ -709,5 +709,23 @@
     "changelogcontent": [
       "Bug: Learndash – Fixed app crash issue when opening lessons"
     ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.32",
+    "date": "Jun 03, 2025",
+    "title": "BuddyBoss App - Version 2.5.32",
+    "changelogcontent": [
+      "Bug: IAP – Fixed issue where iOS users couldn’t re-purchase an expired IAP subscription for the same product"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.3.91",
+    "date": "Jun 03, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.3.91",
+    "changelogcontent": [
+      "Bug: Core - Fixed purchase error causing a issue on the order API after updating to Apple’s latest “verifyReceipt” endpoint"
+    ]
   }
 ]

@@ -781,5 +781,59 @@
       "Bug: Learndash - Fixed issue where LearnDash sample lessons were not appearing unlocked in the app",
       "Bug: Learndash - Fixed issue where the LearnDash Courses block showed 10 courses in the app instead of the set limit of 5"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.8.80",
+    "date": "Jun 12, 2025",
+    "title": "BuddyBoss Platform - Version 2.8.80",
+    "changelogcontent": [
+      "New Feature! – Added Activity Topics for categorizing and filtering posts in activity feeds and groups",
+      "Bug: Activity - Fixed an issue where the activity feed showed duplicate job posts across multiple WPML site languages",
+      "Bug: Core - Fixed an issue where translating the “BuddyBoss” admin menu title caused moderation features to stop working",
+      "Bug: Groups - Fixed an issue where the recipient count in group messages didn’t update after members were deleted",
+      "Bug: Widgets - Fixed issue where the BB Latest Update widget wasn’t showing activity comments or blog comments"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.7.40",
+    "date": "Jun 12, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.7.40",
+    "changelogcontent": [
+      "New Feature! – Added Activity Topics for categorizing and filtering posts in activity feeds and groups"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.8.70",
+    "date": "Jun 12, 2025",
+    "title": "BuddyBoss Theme - Version 2.8.70",
+    "changelogcontent": [
+      "New Feature! – Added Activity Topics for categorizing and filtering posts in activity feeds and groups",
+      "Bug: Styling - Fixed an issue where Stripe card fields inherited the content background color on the checkout page"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.40",
+    "date": "Jun 12, 2025",
+    "title": "BuddyBoss App - Version 2.5.40",
+    "changelogcontent": [
+      "Enhancement: New Feature! – Added Activity Topics for categorizing and filtering posts in activity feeds and groups",
+      "Bug: Core – Optimized Android app size after upgrading the React Native version",
+      "Bug: Notifications – New notifications were not appearing automatically after tapping a second notification",
+      "Bug: Learndash – Fixed issue where LearnDash sample lessons were not appearing unlocked in the app"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.4.00",
+    "date": "Jun 12, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.4.00",
+    "changelogcontent": [
+      "Bug: Learndash - Fixed issue where LearnDash sample lessons were not appearing unlocked in the app",
+      "Bug: Learndash - Fixed issue where the LearnDash Courses block showed 10 courses in the app instead of the set limit of 5"
+    ]
   }
 ]

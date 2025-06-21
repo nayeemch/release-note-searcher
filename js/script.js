@@ -68,7 +68,7 @@ $(document).ready(function () {
         // Initialize DataTable for sorting, searching, and pagination
         const table = $('#releaseTable').DataTable({
           pageLength: 10, // Show 10 rows per page
-          order: [[2, 'desc']], // Sort by Date (column 2) descending
+          order: [[1, 'desc']], // Sort by Date (column 2) descending
           columnDefs: [
             { targets: 3, orderable: false }, // Disable sorting on Changelog
             {

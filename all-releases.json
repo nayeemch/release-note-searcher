@@ -781,5 +781,55 @@
       "Bug: Learndash - Fixed issue where LearnDash sample lessons were not appearing unlocked in the app",
       "Bug: Learndash - Fixed issue where the LearnDash Courses block showed 10 courses in the app instead of the set limit of 5"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.8.90",
+    "date": "Jun 23, 2025",
+    "title": "BuddyBoss Platform - Version 2.8.90",
+    "changelogcontent": [
+      "Bug: Groups - Fixed an issue where deleting activity topics removed them from group-level topics",
+      "Bug: Groups - Fixed an issue where uploading default cover images slowed down sites with many group subscriptions",
+      "Bug: Notifications - Fixed an issue where user hover info was not displaying in notifications after sending a connection request"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.8.80",
+    "date": "Jun 23, 2025",
+    "title": "BuddyBoss Theme - Version 2.8.80",
+    "changelogcontent": [
+      "Bug: Notifications - Fixed an issue where user hover info was not displaying in notifications after sending a connection request"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.50",
+    "date": "Jun 23, 2025",
+    "title": "BuddyBoss App - Version 2.5.50",
+    "changelogcontent": [
+      "Feature: Added support for multiple languages in the BuddyBoss App, allowing users to enjoy a localized experience",
+      "Enhancement: Custom Development – Added new hooks to customize the video container, “Create Post” button, and video component props in modals",
+      "Bug: Login – Fixed a crash that occurred when tapping the ‘Next’ button on the keyboard after entering an email on the login screen",
+      "Bug: IAP – Fixed issue where “offers” were not showing in StoreKit 2 for subscriptions and products during in-app purchases",
+      "Bug: Messages – Optimized messaging screen performance to load faster",
+      "Bug: Groups – Fixed an issue where the recipient count in group messages didn’t update after members were deleted",
+      "Bug: Core – Fixed issue where GIF text and buttons turned white"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.4.10",
+    "date": "Jun 23, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.4.10",
+    "changelogcontent": [
+      "Feature - Added support for multiple languages in the BuddyBoss App, allowing users to enjoy a localized experience",
+      "Enhancement: Builds - Revamped the Build Request page to simplify the build process, remove unnecessary details, and improve language management for more efficient configuration",
+      "Enhancement: Core - Added a new \"Play Music\" permission option in iOS settings to allow background audio playback when developer mode is enabled",
+      "Enhancement: Core - Disabled unsupported BuddyBoss registration options for the Lite App version",
+      "Enhancement: Menus - Restructured the BuddyBoss App menu in the admin panel for better compatibility with multilingual setups",
+      "Bug: Core - Fixed errors occurring between the BuddyBoss App and Advanced Access Manager v7.x when viewing or editing Pages, Posts, or Custom Post Types",
+      "Bug: Paid Membership Pro - Fixed issue where Access Control search didn’t show memberships when the “Allow Signup” option was turned off"
+    ]
   }
 ]

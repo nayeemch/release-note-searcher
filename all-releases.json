@@ -831,5 +831,14 @@
       "Bug: Core - Fixed errors occurring between the BuddyBoss App and Advanced Access Manager v7.x when viewing or editing Pages, Posts, or Custom Post Types",
       "Bug: Paid Membership Pro - Fixed issue where Access Control search didn’t show memberships when the “Allow Signup” option was turned off"
     ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.51",
+    "date": "Jun 24, 2025",
+    "title": "BuddyBoss App - Version 2.5.51",
+    "changelogcontent": [
+      "Bug: Builds – Fixed issue causing app build to fail when the build languages JSON was empty"
+    ]
   }
 ]

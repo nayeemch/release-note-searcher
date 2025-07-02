@@ -840,5 +840,58 @@
     "changelogcontent": [
       "Bug: Builds – Fixed issue causing app build to fail when the build languages JSON was empty"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.9.00",
+    "date": "Jul 01, 2025",
+    "title": "BuddyBoss Platform - Version 2.9.00",
+    "changelogcontent": [
+      "New Feature! ReadyLaunch - launch your community with our new built in page template",
+      "Bug: Forums - Fixed an issue where forum reply and topic media were not being deleted upon deletion"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.7.50",
+    "date": "Jul 01, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.7.50",
+    "changelogcontent": [
+      "New Feature! ReadyLaunch - launch your community with our new built in page template",
+      "Bug: Core - Fixed incorrect URL in the Manual Connect section on the License Keys admin page"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.8.90",
+    "date": "Jul 01, 2025",
+    "title": "BuddyBoss Theme - Version 2.8.90",
+    "changelogcontent": [
+      "Bug: Core - Fixed incorrect URL in the Manual Connect section on the License Keys admin page"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.60",
+    "date": "Jul 01, 2025",
+    "title": "BuddyBoss App - Version 2.5.60",
+    "changelogcontent": [
+      "Enhancement: Custom Development – Introduced courseSingleApi.setCourseSectionContainer hook to customize the container wrapping course sections, including lessons, topics, and final quizzes",
+      "Bug: IAP – Fixed issue where signing in via Social Login or registering with “After Registration” enabled bypassed the IAP setting requiring product purchase during registration",
+      "Bug: Learndash – Fixed issue where MP3 files were not displaying correctly in LearnDash lessons",
+      "Bug: Profiles – Fixed misalignment of the Follow button on user profiles for non-logged-in users",
+      "Bug: Members – Fixed issue where extra white space appeared while typing in Member Advanced Search on Android devices",
+      "Fix: Learndash -Fixed issue where the forced Lesson and Topic Timer would freeze or reset on the app when minimized or navigating between screens – timers now continue running as expected, matching web behavior",
+      "Bug: Menus – Fixed issue where the Quick Link > Logged-in Menu > Video opened as a web fallback – it now opens natively in the in-app browser like other logged-in menu items"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.4.20",
+    "date": "Jul 01, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.4.20",
+    "changelogcontent": [
+      "Bug: IAP - Fixed issue where duplicate in-app purchase requests from the app caused users to lose access to their integration."
+    ]
   }
 ]

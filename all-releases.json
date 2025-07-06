@@ -893,5 +893,23 @@
     "changelogcontent": [
       "Bug: IAP - Fixed issue where duplicate in-app purchase requests from the app caused users to lose access to their integration."
     ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.8.91",
+    "date": "Jul 03, 2025",
+    "title": "BuddyBoss Theme - Version 2.8.91",
+    "changelogcontent": [
+      "Bug: Elementor - Fixed an issue where \"Save as Template\" in Elementor failed when Cloud Templates feature was active"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.61",
+    "date": "Jul 03, 2025",
+    "title": "BuddyBoss App - Version 2.5.61",
+    "changelogcontent": [
+      "Bug: Learndash – Fixed issue where the ‘Mark as Complete’ button did not enable after video completion in LearnDash Video Progression topics"
+    ]
   }
 ]

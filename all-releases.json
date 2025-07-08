@@ -911,5 +911,54 @@
     "changelogcontent": [
       "Bug: Learndash – Fixed issue where the ‘Mark as Complete’ button did not enable after video completion in LearnDash Video Progression topics"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.9.10",
+    "date": "Jul 08, 2025",
+    "title": "BuddyBoss Platform - Version 2.9.10",
+    "changelogcontent": [
+      "Bug: Forums - Fixed issue where image uploads were blocked when using Forum shortcode on a page with document uploads disabled",
+      "Bug: Forums - Fixed search results displaying password entry forms instead of a proper message for password-protected posts",
+      "Bug: Header - Fixed issue where the top row of member cards was partially hidden under the sticky header after pagination in the Members directory",
+      "Bug: Messages - Fixed pagination issue in group messages where banned members caused incorrect member listing",
+      "Bug: ReadyLaunch - Fixed minor design and functional bugs in ReadyLaunch"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.9.00",
+    "date": "Jul 08, 2025",
+    "title": "BuddyBoss Theme - Version 2.9.00",
+    "changelogcontent": [
+      "Bug: Header - Fixed issue where the top row of member cards was partially hidden under the sticky header after pagination in the Members directory",
+      "Bug: WooCommerce - Resolved outdated WooCommerce template notice and fixed show/hide password icons to align with theme styling"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.70",
+    "date": "Jul 08, 2025",
+    "title": "BuddyBoss App - Version 2.5.70",
+    "changelogcontent": [
+      "Bug: Core – Fixed scroll down issue triggered when clicking the Menu Search Bar",
+      "Bug: Login – Fixed issue where the app incorrectly displayed the Terms of Service label instead of hiding it when the Privacy Policy was not set",
+      "Fix: Media – Fixed issue where video block URLs were not playing on Android devices",
+      "Bug: Deep Links – Fixed deep linking issue where links with different URL hosts",
+      "Bug: Activity – Fixed image quality issue when opening images from the Activity page in the app",
+      "Bug: TutorLMS – Fixed issue where videos were not displaying on lesson pages in TutorLMS when using HTML content instead of a direct video URL.",
+      "Bug: Custom Code – Fixed issue where icons were not displaying when using react-native-vector-icons in custom code",
+      "Bug: Media – Fixed issue with the filter not working correctly for Group Photos and Albums",
+      "Bug: Login – Fixed issue where Terms of Service and Privacy Policy modals were closing on swipe down in iOS – modals now remain open as intended"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.4.30",
+    "date": "Jul 08, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.4.30",
+    "changelogcontent": [
+      "Bug: Translations - Fixed translation migration issues"
+    ]
   }
 ]

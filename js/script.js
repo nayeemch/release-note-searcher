@@ -45,6 +45,18 @@ $(document).ready(function () {
 
         // Populate table with JSON data
         const tableBody = $('#releaseTable tbody');
+        // Helper to convert date string to sortable format
+        function parseDateToSortable(dateStr) {
+          const months = {
+            Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06",
+            Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12"
+          };
+          if (!dateStr) return '';
+          const parts = dateStr.split(' ');
+          if (parts.length !== 3) return dateStr; // fallback
+          const [mon, day, year] = parts;
+          return `${year}-${months[mon]}-${day.replace(',', '')}`;
+        }
         data.forEach(item => {
           // Create changelog list with first-letter markers
           const contentList = item.changelogcontent.map(log => {
@@ -54,12 +66,15 @@ $(document).ready(function () {
           }).join('');
           const contentHtml = `<ul>${contentList}</ul>`;
 
+          // Parse date for sorting
+          const sortableDate = parseDateToSortable(item.date || '');
+
           // Append row to table with fallback for missing fields
           tableBody.append(`
             <tr>
               <td data-label="Product">${item.product || ''}</td>
               <td data-label="Version">${item.version || ''}</td>
-              <td data-label="Date">${item.date || ''}</td>
+              <td data-label="Date" data-order="${sortableDate}">${item.date || ''}</td>
               <td data-label="Changelog">${contentHtml}</td>
             </tr>
           `);
@@ -68,7 +83,7 @@ $(document).ready(function () {
         // Initialize DataTable for sorting, searching, and pagination
         const table = $('#releaseTable').DataTable({
           pageLength: 10, // Show 10 rows per page
-          order: [[1, 'desc']], // Sort by Date (column 2) descending
+          order: [[2, 'desc']], // Sort by Date (column 3) descending
           columnDefs: [
             { targets: 3, orderable: false }, // Disable sorting on Changelog
             {

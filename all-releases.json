@@ -960,5 +960,34 @@
     "changelogcontent": [
       "Bug: Translations - Fixed translation migration issues"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.9.11",
+    "date": "Jul 17, 2025",
+    "title": "BuddyBoss Platform - Version 2.9.11",
+    "changelogcontent": [
+      "Enhancement: Improved code structure for better performance and maintainability"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.71",
+    "date": "Jul 17, 2025",
+    "title": "BuddyBoss App - Version 2.5.71",
+    "changelogcontent": [
+      "Bug: Core – Fixed wrong text color for messages in Light mode when the App background was dark"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.4.31",
+    "date": "Jul 17, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.4.31",
+    "changelogcontent": [
+      "Enhancement: Access Control - Migrated the “Access Control” feature out of Labs and integrated it into the core Components section.",
+      "Enhancement: Improved code structure for better performance and maintainability",
+      "Bug: WPML - Fixed issue where changing the site language to one not selected in WPML caused errors"
+    ]
   }
 ]

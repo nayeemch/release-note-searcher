@@ -989,5 +989,58 @@
       "Enhancement: Improved code structure for better performance and maintainability",
       "Bug: WPML - Fixed issue where changing the site language to one not selected in WPML caused errors"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.9.20",
+    "date": "Jul 23, 2025",
+    "title": "BuddyBoss Platform - Version 2.9.20",
+    "changelogcontent": [
+      "Bug: Activity - Fixed an issue where the schedule post dropdown menu was not fully visible, causing options to overflow or become inaccessible",
+      "Bug: Forums - Fixed a 404 error when using a custom slug on forum discussion edit links with the BuddyBoss theme",
+      "Bug: Groups - Fixed an issue where only one video was visible after editing a comment with multiple videos in the Group Media section",
+      "Bug: Groups - Fixed misalignment of the Zoom integration field style in group settings when vertical group navigation is enabled in the latest BuddyBoss theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.7.61",
+    "date": "Jul 23, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.7.61",
+    "changelogcontent": [
+      "Bug: Core - Fixed an error in version 2.7.60"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.7.60",
+    "date": "Jul 23, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.7.60",
+    "changelogcontent": [
+      "Bug: Activity - Fixed an issue where the schedule post dropdown menu was not fully visible, causing options to overflow or become inaccessible",
+      "Bug: Groups - Fixed misalignment of the Zoom integration field style in group settings when vertical group navigation is enabled in the latest BuddyBoss theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.9.10",
+    "date": "Jul 23, 2025",
+    "title": "BuddyBoss Theme - Version 2.9.10",
+    "changelogcontent": [
+      "Bug: LifterLMS - Fixed an issue where the LifterLMS sidebar (lesson list) in focus mode did not scroll independently from the main content",
+      "Bug: LifterLMS - Fixed missing tooltips for locked lessons in the LifterLMS syllabus when using the BuddyBoss theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.80",
+    "date": "Jul 23, 2025",
+    "title": "BuddyBoss App - Version 2.5.80",
+    "changelogcontent": [
+      "Bug: Media – Fixed issue where videos were not playing or displaying properly on iOS devices",
+      "Bug: Core – Fixed issue where the “Last activity” date was not updating on the course screen",
+      "Bug: MemberPress – Fixed issue where the Course Overview button in MemberPress was not navigating to the course screen",
+      "Bug: MemberPress – Fixed UI issue with “Fill in the Blanks” next line layout"
+    ]
   }
 ]

@@ -1042,5 +1042,14 @@
       "Bug: MemberPress – Fixed issue where the Course Overview button in MemberPress was not navigating to the course screen",
       "Bug: MemberPress – Fixed UI issue with “Fill in the Blanks” next line layout"
     ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.81",
+    "date": "Jul 31, 2025",
+    "title": "BuddyBoss App - Version 2.5.81",
+    "changelogcontent": [
+      "Bug: Core – Fixed Android build failure by updating the Facebook SDK dependency to a compatible version"
+    ]
   }
 ]

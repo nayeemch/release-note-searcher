@@ -1051,5 +1051,61 @@
     "changelogcontent": [
       "Bug: Core – Fixed Android build failure by updating the Facebook SDK dependency to a compatible version"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.9.30",
+    "date": "Aug 07, 2025",
+    "title": "BuddyBoss Platform - Version 2.9.30",
+    "changelogcontent": [
+      "Bug: Activity - Fixed issue where the \"More\" label in topics was not translatable",
+      "Bug: Core - Fixed broken cross (X) icon UI in tag selectors across multiple screens, ensuring proper display even with the Modern Events Calendar plugin active",
+      "Bug: Core - Fixed critical accessibility issues, including missing labels and empty anchor tags",
+      "Bug: Forums - Fixed an issue where lead discussion content was missing on single discussion pages, ensuring compatibility with WP 6.8+ query changes.",
+      "Bug: Forums - Fixed issue where discussions couldn't be posted with only a title and media when GIFs were disabled in forum settings",
+      "Bug: Groups - Improved album creation UX to prevent partial photo uploads when \"Create Album\" is clicked before all images finish uploading.",
+      "Bug: Messages - Added support for URL embed preview in messaging",
+      "Bug: ReadyLaunch - Fixed minor UI and functional issues"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.7.70",
+    "date": "Aug 07, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.7.70",
+    "changelogcontent": [
+      "Bug: ReadyLaunch - Fixed minor UI and functional issues"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.9.20",
+    "date": "Aug 07, 2025",
+    "title": "BuddyBoss Theme - Version 2.9.20",
+    "changelogcontent": [
+      "Bug: Core - Fixed a fatal error that occurred on the Themes and Plugins pages when activating the BuddyPress plugin while the BuddyBoss theme was active",
+      "Bug: Core - Fixed broken cross (X) icon UI in tag selectors across multiple screens, ensuring proper display even with the Modern Events Calendar plugin active",
+      "Bug: Core - Fixed critical accessibility issues, including missing labels and empty anchor tags",
+      "Bug: Forums - Fixed an issue where lead discussion content was missing on single discussion pages, ensuring compatibility with WP 6.8+ query changes.",
+      "Bug: Forums - Fixed issue where discussions couldn't be posted with only a title and media when GIFs were disabled in forum settings",
+      "Bug: LearnDash - Fixed LearnDash button styling issue where \"Mark Complete\" and similar buttons were not inheriting primary button colors from BuddyBoss theme options",
+      "Bug: Login - Fixed checkbox layout issue on the login page caused by conflict between BuddyBoss \"Private Website\" setting and Wordfence 2FA functionality",
+      "Bug: Login - Fixed layout issue where Cloudflare Turnstile was partially hidden and misaligned on the BuddyBoss custom login page",
+      "Bug: Menus - Fixed issue where unread notification/message counts were not displayed in second-level profile dropdown menus when a custom menu location was assigned",
+      "Bug: Messages - Added support for URL embed preview in messaging",
+      "Bug: The Event Calendar - Fixed layout issues on Events Calendar pages where featured images and calendar styles were breaking the page display"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.5.90",
+    "date": "Aug 07, 2025",
+    "title": "BuddyBoss App - Version 2.5.90",
+    "changelogcontent": [
+      "Bug: Media – Fixed issue where videos were not playing or displaying properly on iOS devices",
+      "Bug: Core – Fixed issue where the “Last activity” date was not updating on the course screen",
+      "Bug: MemberPress – Fixed issue where the Course Overview button in MemberPress was not navigating to the course screen",
+      "Bug: MemberPress – Fixed UI issue with “Fill in the Blanks” next line layout"
+    ]
   }
 ]

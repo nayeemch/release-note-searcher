@@ -1107,5 +1107,14 @@
       "Bug: MemberPress – Fixed issue where the Course Overview button in MemberPress was not navigating to the course screen",
       "Bug: MemberPress – Fixed UI issue with “Fill in the Blanks” next line layout"
     ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.4.32",
+    "date": "Aug 14, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.4.32",
+    "changelogcontent": [
+      "Bug: Multilingual - Fixed issue where the default English language disappeared after switching the App language to French"
+    ]
   }
 ]

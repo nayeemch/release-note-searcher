@@ -1116,5 +1116,46 @@
     "changelogcontent": [
       "Bug: Multilingual - Fixed issue where the default English language disappeared after switching the App language to French"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.8.0",
+    "date": "Aug 19, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.8.0",
+    "changelogcontent": [
+      "Bug: Activity - Added permission checks to Scheduled Posts API endpoints to prevent users from accessing other users scheduled posts",
+      "Bug: Core - Fixed accessibility issues across Platform and Theme for improved usability",
+      "Bug: Core - Fixed PHP 8.4 warnings and removed extra database queries for better stability and performance"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.6.1",
+    "date": "Aug 21, 2025",
+    "title": "BuddyBoss App - Version 2.6.1",
+    "changelogcontent": [
+      "Enhancement: Updated Android targetSdkVersion to API level 35 and upgraded React Native to version 0.79.5 for improved compatibility, stability, and Play Store compliance"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.6.0",
+    "date": "Aug 19, 2025",
+    "title": "BuddyBoss App - Version 2.6.0",
+    "changelogcontent": [
+      "Bug: Moderation – Fixed issue where media items like photos and videos could not be reported from the App.",
+      "Bug: Learndash – Fixed issue where LearnDash lesson video progression was not updating in the App",
+      "Bug: Profile – Fixed issue where profile cover and group avatar images were not displaying in the App",
+      "Bug: Core – Fixed issue where bullet points and numbered lists were not displaying correctly"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.5.0",
+    "date": "Aug 19, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.5.0",
+    "changelogcontent": [
+      "Bug: Core - Fixed Tab Bar issue where 6 menus were shown instead of restricting to 5"
+    ]
   }
 ]

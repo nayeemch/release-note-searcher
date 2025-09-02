@@ -1157,5 +1157,17 @@
     "changelogcontent": [
       "Bug: Core - Fixed Tab Bar issue where 6 menus were shown instead of restricting to 5"
     ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.6.2",
+    "date": "Aug 28, 2025",
+    "title": "BuddyBoss App - Version 2.6.2",
+    "changelogcontent": [
+      "Bug: Core – Corrected UI on Show Formatting",
+      "Bug: Activity – Fixed issue where the app froze on Android when reacting to posts in the News Feed",
+      "Bug: Activity – Fixed crash when mentioning someone in the Create Activity screen",
+      "Bug: Learndash – Fixed an issue where the app crashed when starting a course"
+    ]
   }
 ]

@@ -1169,5 +1169,29 @@
       "Bug: Activity – Fixed crash when mentioning someone in the Create Activity screen",
       "Bug: Learndash – Fixed an issue where the app crashed when starting a course"
     ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.7.0",
+    "date": "Sep 04, 2025",
+    "title": "BuddyBoss App - Version 2.7.0",
+    "changelogcontent": [
+      "Bug: Courses – Fixed issue where offline downloaded courses showed an error and could not be viewed when opening lessons",
+      "Enhancement: Activity – Added a new “Unanswered” option to the Activity Feed filter, allowing users to view posts without comments or replies",
+      "Enhancement: Custom Development – Added support to modify components in the Messages screen",
+      "Enhancement: Learndash – Background audio playback is now supported for downloaded course audio, so learning continues even when the app is minimized."
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.6.0",
+    "date": "Sep 04, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.6.0",
+    "changelogcontent": [
+      "Bug: Access Control - Fixed issue where Access Group member counts were not updating correctly when users registered with certain profile types and roles",
+      "Bug: App Multilingual - Fixed issue where an empty language option appeared in the app language dropdown when the site language did not match the app language",
+      "Bug: Learndash - Fixed issue where the “Mark Complete” button appeared duplicated on H5P content within topics",
+      "Bug: Profile - Fixed issue where password reset (forgot password) was not working when REST API was set to private"
+    ]
   }
 ]

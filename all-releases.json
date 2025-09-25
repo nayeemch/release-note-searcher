@@ -1193,5 +1193,55 @@
       "Bug: Learndash - Fixed issue where the “Mark Complete” button appeared duplicated on H5P content within topics",
       "Bug: Profile - Fixed issue where password reset (forgot password) was not working when REST API was set to private"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.9.0",
+    "date": "Sep 23, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.9.0",
+    "changelogcontent": [
+      "New Feature! Activity - Added Featured Image above post content in activity and group posts, making feeds more visual and engaging",
+      "New Feature! Activity - Added support for Post Titles and H3/H4 text formatting in activity feeds, helping communities stay organized and posts easier to read"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.9.0",
+    "date": "Sep 23, 2025",
+    "title": "BuddyBoss App - Version 2.9.0",
+    "changelogcontent": [
+      "New Feature! Activity – Added Featured Image above post content in activity and group posts, making feeds more visual and engaging",
+      "New Feature! Activity – Added support for Post Titles and H3/H4 text formatting in activity feeds, helping communities stay organized and posts easier to read"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.8.0",
+    "date": "Sep 17, 2025",
+    "title": "BuddyBoss App - Version 2.8.0",
+    "changelogcontent": [
+      "Enhancement: Custom Development – Added a new hook to customize the “Continue with” divider text before social login buttons",
+      "Enhancement: Custom Development – Added new hooks to modify the header component of web fallbacks",
+      "Bug: Topics – Fixed app crash when opening topics in offline downloaded courses"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.7.1",
+    "date": "Sep 11, 2025",
+    "title": "BuddyBoss App - Version 2.7.1",
+    "changelogcontent": [
+      "Bug: Core –  Resolved white screen crash and other critical issues on both Android and iOS",
+      "Bug: Core – Fixed issue where some links from the same site opened in an external browser instead of the in-app browser, even when the backend setting was configured correctly"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.7.0",
+    "date": "Sep 23, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.7.0",
+    "changelogcontent": [
+      "Enhancement: Translations - Added new translation strings"
+    ]
   }
 ]

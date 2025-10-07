@@ -1243,5 +1243,24 @@
     "changelogcontent": [
       "Enhancement: Translations - Added new translation strings"
     ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.9.2",
+    "date": "Oct 02, 2025",
+    "title": "BuddyBoss App - Version 2.9.2",
+    "changelogcontent": [
+      "Bug: Core – Remove “RN TrackPlayer” foreground service when not enabled",
+      "Bug: TutorLMS – App crash when span used in course description"
+    ]
+  },
+  {
+    "product": "BuddyBoss App",
+    "version": "2.9.1",
+    "date": "Sep 26, 2025",
+    "title": "BuddyBoss App - Version 2.9.1",
+    "changelogcontent": [
+      "Bug: Access Control – Fixed group access rules that were incorrectly blocking the Activity Feed page in test builds"
+    ]
   }
 ]

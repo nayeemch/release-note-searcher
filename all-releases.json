@@ -1262,5 +1262,209 @@
     "changelogcontent": [
       "Bug: Access Control – Fixed group access rules that were incorrectly blocking the Activity Feed page in test builds"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.14.3",
+    "date": "Oct 10, 2025",
+    "title": "BuddyBoss Platform - Version 2.14.3",
+    "changelogcontent": [
+      "Bug: Core - Fixed an issue where Polls, Scheduled Posts, and Reactions were not working correctly on site"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.14.2",
+    "date": "Oct 09, 2025",
+    "title": "BuddyBoss Platform - Version 2.14.2",
+    "changelogcontent": [
+      "Bug: Core - Fixed the license rate limit error and proper error handling"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.14.1",
+    "date": "Oct 08, 2025",
+    "title": "BuddyBoss Platform - Version 2.14.1",
+    "changelogcontent": [
+      "Bug: Core - Fixed a fatal error causing the Zoom integration to break",
+      "Bug: Core - Fixed Fatal Error (PHP 8.3.14) - array_merge() on the notification component",
+      "Bug: Core - Fixed Notice: Undefined index: dependencies in core CSS and JS"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.14.0",
+    "date": "Oct 06, 2025",
+    "title": "BuddyBoss Platform - Version 2.14.0",
+    "changelogcontent": [
+      "New Feature! Core - Implemented a new licensing system for BuddyBoss plugins and theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.13.1",
+    "date": "Oct 02, 2025",
+    "title": "BuddyBoss Platform - Version 2.13.1",
+    "changelogcontent": [
+      "Bug: LearnDash - Fixed BuddyBoss Theme compatibility with LearnDash Modern UI templates to ensure lessons, topics, and courses display correctly"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.13.0",
+    "date": "Sep 23, 2025",
+    "title": "BuddyBoss Platform - Version 2.13.0",
+    "changelogcontent": [
+      "New Feature! Activity - Added Featured Image above post content in activity and group posts, making feeds more visual and engaging",
+      "New Feature! Activity - Added support for Post Titles and H3/H4 text formatting in activity feeds, helping communities stay organized and posts easier to read"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.12.0",
+    "date": "Sep 17, 2025",
+    "title": "BuddyBoss Platform - Version 2.12.0",
+    "changelogcontent": [
+      "Bug: Activity - Fixed issue where activity filters still applied a removed topic filter instead of working independently",
+      "Bug: Activity - Fixed issue where activity topic settings remained visible when the main topic setting was disabled",
+      "Bug: Activity - Removed incorrect tooltip \"Please select a Topic\" from the Post button when no group topics exist",
+      "Bug: Fixed an issue where network search displayed private forum replies to non-group members",
+      "Bug: Forums - Fixed an issue where code snippets in forum discussions and replies broke when added from the backend editor",
+      "Bug: Groups - Fixed an issue where subscribers were able to upload media in groups despite restrictions set in group settings",
+      "Bug: Moderation - Added search functionality to moderation admin pages",
+      "Bug: ReadyLaunch - Fixed UI issues with pre and code blocks in forum content when ReadyLaunch is enabled",
+      "Bug: WooCommerce - Fixed WooCommerce order confirmation page UI conflict between ReadyLaunch and Theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.11.0",
+    "date": "Sep 04, 2025",
+    "title": "BuddyBoss Platform - Version 2.11.0",
+    "changelogcontent": [
+      "Enhancement: Activity - Added a new “Unanswered” option to the Activity Feed filter, allowing users to view posts without comments or replies",
+      "Bug: ReadyLaunch - Fixed an issue in ReadyLaunch where editing a discussion did not correctly remove previously uploaded media, causing old and new files to display together",
+      "Bug: ReadyLaunch - Fixed an issue in ReadyLaunch where the Edit Activity modal appeared behind the Activity modal",
+      "Bug: ReadyLaunch - Fixed an issue where the ReadyLaunch group sticky header overlapped the activity post form in the group feed"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.10.0",
+    "date": "Aug 19, 2025",
+    "title": "BuddyBoss Platform - Version 2.10.0",
+    "changelogcontent": [
+      "New Feature! ReadyLaunch - Introduced a ReadyLaunch onboarding setup to guide users through initial configuration",
+      "Bug: Activity - Added new hooks in Activity Topics to provide extensibility support",
+      "Bug: Activity - Fixed an issue where replies to cached activity comments showed undefined instead of the correct user",
+      "Bug: Core - Fixed accessibility issues across Platform and Theme for improved usability",
+      "Bug: Core - Enhanced advanced search to support flexible date formats and multiple languages for accurate member search on date fields",
+      "Bug: Core - Fixed PHP 8.4 warnings and removed extra database queries for better stability and performance",
+      "Bug: Groups - Fixed issue where the 'Send Request' button appeared for users allowed to join groups without approval",
+      "Bug: Media - Fixed a critical security vulnerability in the document download function to prevent unauthorized file access",
+      "Bug: Moderation - Fixed an issue where reported media from group feeds was still visible in group and media directories",
+      "Bug: Moderation - Fixed incorrect media counts in groups when moderation and content reporting settings were enabled",
+      "Bug: Profiles - Fixed default avatar initials showing incorrectly by using nickname instead of the selected display name format",
+      "Bug: Profiles - Fixed issue where the default Gender filter in profile fields did not work correctly when the option order was changed"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.10.1",
+    "date": "Oct 09, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.10.1",
+    "changelogcontent": [
+      "Bug: Core - Fixed the license rate limit error and proper error handling"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.10.0",
+    "date": "Oct 06, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.10.0",
+    "changelogcontent": [
+      "New Feature! Core - Implemented a new licensing system for BuddyBoss plugins and theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.14.3",
+    "date": "Oct 10, 2025",
+    "title": "BuddyBoss Theme - Version 2.14.3",
+    "changelogcontent": [
+      "Bug: Core - Fixed the issue with license controller initialization"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.14.2",
+    "date": "Oct 09, 2025",
+    "title": "BuddyBoss Theme - Version 2.14.2",
+    "changelogcontent": [
+      "Bug: Core - Fixed the license rate limit error and proper error handling"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.14.0",
+    "date": "Oct 06, 2025",
+    "title": "BuddyBoss Theme - Version 2.14.0",
+    "changelogcontent": [
+      "New Feature! Core - Implemented a new licensing system for BuddyBoss plugins and theme"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.13.1",
+    "date": "Oct 02, 2025",
+    "title": "BuddyBoss Theme - Version 2.13.1",
+    "changelogcontent": [
+      "Bug: LearnDash - Fixed BuddyBoss Theme compatibility with LearnDash Modern UI templates to ensure lessons, topics, and courses display correctly"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.13.0",
+    "date": "Sep 23, 2025",
+    "title": "BuddyBoss Theme - Version 2.13.0",
+    "changelogcontent": [
+      "New Feature! Activity - Added Featured Image above post content in activity and group posts, making feeds more visual and engaging",
+      "New Feature! Activity - Added support for Post Titles and H3/H4 text formatting in activity feeds, helping communities stay organized and posts easier to read"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.12.0",
+    "date": "Sep 17, 2025",
+    "title": "BuddyBoss Theme - Version 2.12.0",
+    "changelogcontent": [
+      "Bug: Core - Fixed an issue where SEO plugin breadcrumbs were displayed on the homepage",
+      "Bug: LifterLMS - Resolved pagination UI issues in course listings caused by ReadyLaunch",
+      "Bug: WooCommerce - Updated WooCommerce template files in Theme to remove outdated template file notice"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.11.0",
+    "date": "Sep 04, 2025",
+    "title": "BuddyBoss Theme - Version 2.11.0",
+    "changelogcontent": [
+      "Bug: Styling - Fixed alignment, spacing, and text clipping issues in Buddypanel sub-menus and sections"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.10.0",
+    "date": "Aug 19, 2025",
+    "title": "BuddyBoss Theme - Version 2.10.0",
+    "changelogcontent": [
+      "Bug: Core - Fixed accessibility issues across Platform and Theme for improved usability",
+      "Bug: Core - Fixed PHP 8.4 warnings and removed extra database queries for better stability and performance",
+      "Bug: LearnDash - Fixed the LearnDash Profile block not collapsing on mobile small screens",
+      "Bug: LifterLMS - Fixed the extra menu icon showing on the LifterLMS Dashboard page in mobile view",
+      "Bug: Styling - Resolved UI issues across all WC Vendors plugin pages to ensure full compatibility with the BuddyBoss Theme",
+      "Bug: WooCommerce - Fixed WooCommerce checkout form colors not applying theme options"
+    ]
   }
 ]

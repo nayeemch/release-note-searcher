@@ -1466,5 +1466,23 @@
       "Bug: Styling - Resolved UI issues across all WC Vendors plugin pages to ensure full compatibility with the BuddyBoss Theme",
       "Bug: WooCommerce - Fixed WooCommerce checkout form colors not applying theme options"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.14.4",
+    "date": "Oct 14, 2025",
+    "title": "BuddyBoss Platform - Version 2.14.4",
+    "changelogcontent": [
+      "Bug: Core - Fixed an issue where theme updates were not being received"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.14.4",
+    "date": "Oct 14, 2025",
+    "title": "BuddyBoss Theme - Version 2.14.4",
+    "changelogcontent": [
+      "Bug: Core - Fixed an issue where theme updates were not being received"
+    ]
   }
 ]

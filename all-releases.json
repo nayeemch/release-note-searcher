@@ -1484,5 +1484,25 @@
     "changelogcontent": [
       "Bug: Core - Fixed an issue where theme updates were not being received"
     ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.8.0",
+    "date": "Oct 28, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.8.0",
+    "changelogcontent": [
+      "Bug: Menus - Fixed an issue where the “Always open in external browser” option was not being saved in the More menu for custom links",
+      "Bug: Translations - Fixed incorrect menu item count shown when a different English variant (e.g., en-GB) was selected",
+      "Bug: Translations - Removed unsupported languages from the translation list and fixed issues with the Vietnamese language display"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.7.1",
+    "date": "Oct 21, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.7.1",
+    "changelogcontent": [
+      "Bug: Menus - Fixed issue where the user’s avatar icon was not appearing in the app header under the More menu"
+    ]
   }
 ]

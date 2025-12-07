@@ -1504,5 +1504,110 @@
     "changelogcontent": [
       "Bug: Menus - Fixed issue where the user’s avatar icon was not appearing in the app header under the More menu"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.15.3",
+    "date": "Nov 27, 2025",
+    "title": "BuddyBoss Platform - Version 2.15.3",
+    "changelogcontent": [
+      "Bug: Giphy - Fixed GIFs not auto-playing on page load in messages and activity feeds",
+      "Bug: WPML - Fixed an issue where hover cards failed to load data when WPML was active due to home URLs ending with a trailing slash"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.15.2",
+    "date": "Nov 20, 2025",
+    "title": "BuddyBoss Platform - Version 2.15.2",
+    "changelogcontent": [
+      "Enhancement: Core - Implemented a notice for media privacy change handling"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.15.1",
+    "date": "Nov 13, 2025",
+    "title": "BuddyBoss Platform - Version 2.15.1",
+    "changelogcontent": [
+      "Enhancement: Core - Improved reliability of license status checks by optimizing API requests to prevent delays experience"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.15.0",
+    "date": "Nov 11, 2025",
+    "title": "BuddyBoss Platform - Version 2.15.0",
+    "changelogcontent": [
+      "New Feature! - Added support for the new Gamification, Offload Media, and Sharing features, enabling seamless integration and enhanced functionality across the BuddyBoss Platform"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.15.2",
+    "date": "Nov 20, 2025",
+    "title": "BuddyBoss Theme - Version 2.15.2",
+    "changelogcontent": [
+      "Enhancement: Core - Implemented a notice for media privacy change handling"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.15.1",
+    "date": "Nov 13, 2025",
+    "title": "BuddyBoss Theme - Version 2.15.1",
+    "changelogcontent": [
+      "Enhancement: Core - Improved reliability of license status checks by optimizing API requests to prevent delays experience"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.15.0",
+    "date": "Nov 11, 2025",
+    "title": "BuddyBoss Theme - Version 2.15.0",
+    "changelogcontent": [
+      "New Feature! - Added support for the new Sharing feature across the BuddyBoss Theme, enabling seamless post sharing within the community and to external social platforms"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.9.3",
+    "date": "Dec 03, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.9.3",
+    "changelogcontent": [
+      "Enhancement: Core - Added alerts for expired signing certificates with steps to fix them before building.",
+      "Bug: Core - BuddyBoss App Plugin conflict with old blog post comment settings",
+      "Bug: Core - Fixed issue where adding more than one Directory block showed errors",
+      "Bug: Core - Users can request both test and release builds simultaneously",
+      "Bug: Learndash - Fixed LearnDash course details API using the wrong course ID for prerequisite checks when Shared Course Steps is enabled"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.9.2",
+    "date": "Nov 26, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.9.2",
+    "changelogcontent": [
+      "Bug: IAP - Android In-App Subscription Products Status Showing as Inactive After Latest Update"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.9.1",
+    "date": "Nov 20, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.9.1",
+    "changelogcontent": [
+      "Bug: IAP - Fixed an issue where Android in-app products were desynced and caused billing errors"
+    ]
+  },
+  {
+    "product": "BuddyBoss App Plugin",
+    "version": "2.9.0",
+    "date": "Nov 12, 2025",
+    "title": "BuddyBoss App Plugin - Version 2.9.0",
+    "changelogcontent": [
+      "Bug: Core - Added MODIFY_AUDIO_SETTINGS permission so Android audio recording now works",
+      "Bug: Core - Fixed conflict between Events Calendar Pro and BuddyBoss App that prevented saving events in the Gutenberg editor"
+    ]
   }
 ]

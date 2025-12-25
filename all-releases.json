@@ -1609,5 +1609,67 @@
       "Bug: Core - Added MODIFY_AUDIO_SETTINGS permission so Android audio recording now works",
       "Bug: Core - Fixed conflict between Events Calendar Pro and BuddyBoss App that prevented saving events in the Gutenberg editor"
     ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.16.1",
+    "date": "Dec 16, 2025",
+    "title": "BuddyBoss Platform - Version 2.16.1",
+    "changelogcontent": [
+      "Bug: Core - Enhanced the license activation system with improved rate limiting and stability fixes to strengthen security"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform",
+    "version": "2.16.0",
+    "date": "Dec 11, 2025",
+    "title": "BuddyBoss Platform - Version 2.16.0",
+    "changelogcontent": [
+      "Enhancement: Core – Improved the licensing service to reduce interruptions and increase the grace period when a license is not initially detected",
+      "Bug: Activity - Added a tooltip on the Post button to indicate when a post title is required",
+      "Bug: Activity - Fixed an issue where the topics section appeared clunky during initial page load",
+      "Bug: Core - Corrected a malformed CSS transition property to restore proper hover and transition effects across the platform",
+      "Bug: Forums - Fixed an issue where email notifications were not sent for discussions created or scheduled from the backend",
+      "Bug: Groups - Fixed an issue where the Group List View automatically refreshed and redirected to the group feed instead of displaying sub-groups",
+      "Bug: LearnDash - Fixed an issue where pagination disappeared for LearnDash quiz listings with more than 20 items when Platform was active",
+      "Bug: MemberPress - Fixed a PHP fatal error when accessing locked MemberPress lessons/quizzes and improved the UI styling for the lessons list on course pages",
+      "Bug: Messages - Fixed a playback conflict where YouTube videos would auto-play when a Video.js clip was played in picture-in-picture mode, ensuring only the active Video.js video plays",
+      "Bug: Profiles - Fixed an issue where profile details fields became non-editable on the frontend when a “no self-select” profile type field was assigned to a user",
+      "Bug: ReadyLaunch - Fixed a layout issue causing the activity privacy dropdown to appear oversized when ReadyLaunch was enabled",
+      "Bug: ReadyLaunch - Fixed an issue where emoji reactions were not appearing in forums when ReadyLaunch was enabled with another theme",
+      "Bug: ReadyLaunch - Improved mobile responsiveness in ReadyLaunch by fixing submenu overflow, activity sorting dropdown issues, and restoring emoji picker functionality",
+      "Bug: Translation - Fixed an issue where certain text strings across the platform were not translatable"
+    ]
+  },
+  {
+    "product": "BuddyBoss Platform Pro",
+    "version": "2.11.0",
+    "date": "Dec 11, 2025",
+    "title": "BuddyBoss Platform Pro - Version 2.11.0",
+    "changelogcontent": [
+      "Enhancement: Core – Improved the licensing service to reduce interruptions and increase the grace period when a license is not initially detected",
+      "Bug: Elementor - Fixed an issue where YouTube videos embedded using Elementor’s Video widget failed to load correctly on Safari for macOS and iOS"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.16.1",
+    "date": "Dec 16, 2025",
+    "title": "BuddyBoss Theme - Version 2.16.1",
+    "changelogcontent": [
+      "Bug: Core - Enhanced the license activation system with improved rate limiting and stability fixes to strengthen security"
+    ]
+  },
+  {
+    "product": "BuddyBoss Theme",
+    "version": "2.16.0",
+    "date": "Dec 11, 2025",
+    "title": "BuddyBoss Theme - Version 2.16.0",
+    "changelogcontent": [
+      "Bug: Elementor - Removed an unnecessary drop shadow from the Elementor Header Bar widget to improve visual consistency",
+      "Bug: Elementor - Resolved styling issues in the BuddyBoss Elementor templates modal, including header text visibility, search field background, and navigation hover states",
+      "Bug: LearnDash - Prevented inaccessible LearnDash lessons from being clickable, ensuring users can only open lessons they have access to",
+      "Bug: WooCommerce - Improved UI styling for WooCommerce cart, checkout, and variation layouts to ensure consistent theme appearance"
+    ]
   }
 ]
